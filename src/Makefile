@@ -11,7 +11,3 @@ build: ${OBJS}
 
 clean:
 	rm *.o ${EXEC}
-
-
-docker:
-	docker build -t dns2doh .

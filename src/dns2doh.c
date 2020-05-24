@@ -192,7 +192,7 @@ main(int c, char **v) {
 		}
 		evutil_make_socket_nonblocking(sock);
 		my_addr.sin_family = AF_INET;
-		my_addr.sin_port = htons(55353);
+		my_addr.sin_port = htons(53);
 		my_addr.sin_addr.s_addr = INADDR_ANY;
 		if (bind(sock, (struct sockaddr*)&my_addr, sizeof(my_addr))<0) {
 			perror("bind");
